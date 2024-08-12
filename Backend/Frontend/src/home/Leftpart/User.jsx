@@ -9,7 +9,7 @@ function User({ user }) {
   const isOnline = onlineUsers.includes(user._id);
   return (
     <div
-      className={` ${isSelected ? "bg-gray-200" : ""
+      className={`border my-2 rounded-md ${isSelected ? "bg-gray-200" : ""
         }`}
       onClick={() => setSelectedConversation(user)}
     >

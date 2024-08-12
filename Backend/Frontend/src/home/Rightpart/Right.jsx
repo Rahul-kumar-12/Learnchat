@@ -12,7 +12,7 @@ function Right() {
     return setSelectedConversation(null);
   }, [setSelectedConversation]);
   return (
-    <div className="w-full bg-slate-900 text-gray-300 bg-[#FFFFFF]">
+    <div className="w-full  text-gray-300 bg-[#FFFFFF]">
       <div>
         {!selectedConversation ? (
           <NoChatSelected />
@@ -54,8 +54,8 @@ const NoChatSelected = () => {
               {authUser.user.fullname}
             </span>
             <br />
-            No chat selected, please start conversation by selecting anyone to
-            your contacts
+            please start conversation by selecting anyone to
+            your contacts.
           </h1>
         </div>
       </div>

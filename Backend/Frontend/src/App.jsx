@@ -21,7 +21,7 @@ function App() {
               //   <Left />
               //   <Right />
               // </div>
-              <div className="drawer lg:drawer-open">
+              <div className="drawer bg-[#334155] lg:drawer-open">
                 <input
                   id="my-drawer-2"
                   type="checkbox"

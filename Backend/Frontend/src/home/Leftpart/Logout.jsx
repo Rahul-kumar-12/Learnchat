@@ -25,10 +25,13 @@ function Logout() {
       <hr />
       <div className="h-[20]">
         <div>
-          <BiLogOutCircle
-            className="text-5xl text-white mt-8 bg-slate-700 duration-300 cursor-pointer rounded-full p-2 ml-2 mt-1"
+          <input
+            type="submit"
+            value="Logout"
             onClick={handleLogout}
+            className="text-white bg-black text-white font-medium px-4 py-2 mt-4 px-2 py-1 cursor-pointer rounded-lg"
           />
+
 
         </div>
       </div>

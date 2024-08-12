@@ -7,7 +7,7 @@ function Users() {
   console.log(allUsers);
   return (
     <div>
-      <h1 className="px-8 py-2 text-white font-semibold bg-slate-800 border rounded-md">
+      <h1 className="font-bold text-lg py-4 px-4 text-white">
         Messages
       </h1>
       <div

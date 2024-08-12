@@ -8,7 +8,7 @@ export default defineConfig({
     port: 3001,
     proxy: {
       "/api": {
-        target: "https://learnchat.onrender.com",
+        target: "http://localhost:4002",
         changeOrigin: true,
       },
     },

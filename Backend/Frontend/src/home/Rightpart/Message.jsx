@@ -19,7 +19,7 @@ function Message({ message }) {
           <div className={`chat-bubble text-white ${chatColor}`}>
             {message.message}
           </div>
-          <div className="chat-footer">{formattedTime}</div>
+          <div className="chat-footer text-slate-700 font-medium">{formattedTime}</div>
         </div>
       </div>
     </div>

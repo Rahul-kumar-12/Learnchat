@@ -23,21 +23,19 @@ function Search() {
   };
   return (
     <div className=" h-[10vh]">
-      <div className="px-6 py-4">
+      <div className="px-2 py-4">
         <form onSubmit={handleSubmit}>
           <div className="flex space-x-3">
             <label className="border-[1px] border-white-700 bg-white-900 rounded-lg p-3 flex items-center gap-2 w-[80%]">
               <input
                 type="text"
                 className="grow outline-none text-black font-medium bg-transparent"
-                placeholder="Search"
+                placeholder="search user name"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
               />
             </label>
-            <button>
-              <FaSearch className="text-5xl p-2 hover:bg-gray-600 rounded-full duration-300" />
-            </button>
+
           </div>
         </form>
       </div>
