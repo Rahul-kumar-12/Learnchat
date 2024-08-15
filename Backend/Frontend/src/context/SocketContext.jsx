@@ -15,11 +15,15 @@ export const SocketProvider = ({ children }) => {
 
   useEffect(() => {
     if (authUser) {
-      const socket = io("https://learnchat.onrender.com", {
-        query: {
-          userId: authUser.user._id,
-        },
-      });
+      const socket =
+        io(
+          // "https://learnchat.onrender.com",
+          "http://localhost:4002",
+          {
+            query: {
+              userId: authUser.user._id,
+            },
+          });
       setSocket(socket);
       socket.on("getOnlineUsers", (users) => {
         setOnlineUsers(users);
