@@ -17,8 +17,7 @@ export const SocketProvider = ({ children }) => {
     if (authUser) {
       const socket =
         io(
-          // "https://learnchat.onrender.com",
-          "http://localhost:4002",
+          "https://learnchat.onrender.com",
           {
             query: {
               userId: authUser.user._id,
